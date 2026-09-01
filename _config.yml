@@ -1,13 +1,13 @@
 intro: ""
-title: "SatBird: a Dataset for Bird Species Distribution Modeling using Remote Sensing and Citizen Science Data"
+title: "CanadaWildFireDaily: A Large-scale Dataset for Daily Wildfire Spread in Canada"
 description:
   - Conference on Neural Information Processing Systems (NeurIPS) 2023, Datasets and Benchmarks track.
   - An earlier version of this work, "Bird Distribution Modelling using Remote Sensing and Citizen Science Data" was presented as a contributed talk at ICLR 2023 Tackling Climate Change with Machine Learning workshop.
 buttons:
-  SatBird Dataset: https://drive.google.com/drive/folders/1eaL2T7U9Imq_CTDSSillETSDJ1vxi5Wq?usp=sharing
-  Paper: "https://arxiv.org/pdf/2311.00936.pdf"
-  Datasheet: "https://drive.google.com/file/d/1hxXDQfIJ6NsX8lbz_NG3VRzhEhZ77hIM/view?usp=drive_link"
-  Code: "https://github.com/RolnickLab/SatBird/"
-  Talk: "https://neurips.cc/virtual/2023/poster/73571"
-  Poster: "https://neurips.cc/media/PosterPDFs/NeurIPS%202023/73571.png?t=1700679065.2212121"
+  SatBird Dataset: https://huggingface.co/datasets/CanadaWildFireDaily/CanadaWildFireDaily-v1
+  Paper: ""
+  Datasheet: ""
+  Code: "https://anonymous.4open.science/r/CanadaWildFireDaily-5819/README.md"
+  Talk: ""
+  Poster: ""
   Authors: "#authors"
