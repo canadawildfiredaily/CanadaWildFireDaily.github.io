@@ -1,8 +1,7 @@
 intro: ""
 title: "CanadaWildFireDaily: A Large-scale Dataset for Daily Wildfire Spread in Canada"
 description:
-  - Conference on Neural Information Processing Systems (NeurIPS) 2023, Datasets and Benchmarks track.
-  - An earlier version of this work, "Bird Distribution Modelling using Remote Sensing and Citizen Science Data" was presented as a contributed talk at ICLR 2023 Tackling Climate Change with Machine Learning workshop.
+  - Conference on Neural Information Processing Systems (NeurIPS) 2026, Datasets and Benchmarks track.
 buttons:
   SatBird Dataset: https://huggingface.co/datasets/CanadaWildFireDaily/CanadaWildFireDaily-v1
   Paper: ""
