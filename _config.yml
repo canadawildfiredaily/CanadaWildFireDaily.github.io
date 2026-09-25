@@ -2,6 +2,7 @@ intro: ""
 title: "CanadaWildfireDaily: A Dataset and Benchmark for Daily Wildfire Spread in Canada"
 description:
   - Currently Under Review
+  - Project Website Under Construction
 buttons:
   CanadaWildFireDaily Dataset: https://huggingface.co/datasets/CanadaWildFireDaily/CanadaWildFireDaily-v1
   Paper: ""

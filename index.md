@@ -9,7 +9,6 @@ layout: default
 ## CanadaWildfireDaily Dataset and Benchmark
 
 <p class="cover" align="center"> <img src="assets/CanadaWildFireDaily_overview.png" width="85%" alt/> 
-<em align="center" > 
 </p>
 
 
@@ -17,7 +16,8 @@ layout: default
 
 The dataset is available for [download](https://huggingface.co/datasets/CanadaWildFireDaily/CanadaWildFireDaily-v1), and we release the [code](https://github.com/hagerradi/CanadaWildFireDaily) for building the dataset in other regions of the world and for the benchmark. \\
 
-Citing
+
+## Citing
 ------
 Coming soon
 
