@@ -1,12 +1,12 @@
 intro: ""
-title: "CanadaWildFireDaily: A Large-scale Dataset for Daily Wildfire Spread in Canada"
+title: "CanadaWildfireDaily: A Dataset and Benchmark for Daily Wildfire Spread in Canada"
 description:
-  - Conference on Neural Information Processing Systems (NeurIPS) 2026, Datasets and Benchmarks track.
+  - Currently Under Review
 buttons:
-  SatBird Dataset: https://huggingface.co/datasets/CanadaWildFireDaily/CanadaWildFireDaily-v1
+  CanadaWildFireDaily Dataset: https://huggingface.co/datasets/CanadaWildFireDaily/CanadaWildFireDaily-v1
   Paper: ""
   Datasheet: ""
-  Code: "https://anonymous.4open.science/r/CanadaWildFireDaily-5819/README.md"
+  Code: "https://github.com/hagerradi/CanadaWildFireDaily"
   Talk: ""
   Poster: ""
   Authors: "#authors"
