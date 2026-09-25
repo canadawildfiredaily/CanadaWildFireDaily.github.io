@@ -46,19 +46,20 @@ a {
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+  color: $accent-color;
+  background-color: transparent;
+  border-color: $accent-color;
   border-style: solid;
   border-width: 1px;
-  border-radius: 0.3rem;
+  border-radius: 2rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: #fff;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    background-color: $accent-color;
+    border-color: $accent-color;
   }
 
   + .btn {
@@ -66,11 +67,11 @@ a {
   }
 
   @include large {
-    padding: 0.75rem 1rem;
+    padding: 0.6rem 1.4rem;
   }
 
   @include medium {
-    padding: 0.6rem 0.9rem;
+    padding: 0.55rem 1.1rem;
     font-size: 0.9rem;
   }
 
@@ -87,22 +88,28 @@ a {
   }
 }
 
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .page-header {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  border-bottom: 1px solid $header-border-color;
 
   @include large {
-    padding: 3rem 6rem 2rem;
+    padding: 3.5rem 6rem 2.5rem;
   }
 
   @include medium {
-    padding: 1.8rem 4rem 1.2rem;
+    padding: 2rem 4rem 1.5rem;
   }
 
   @include small {
-    padding: 1.2rem 1rem .8rem;
+    padding: 1.5rem 1rem 1rem;
   }
 }
 
@@ -126,9 +133,11 @@ a {
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 
   @include large {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
   }
 
   @include medium {
@@ -136,25 +145,26 @@ a {
   }
 
   @include small {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
 .project-tagline {
-  margin: 1rem 0 1.5rem;
+  margin: 1rem auto 1.5rem;
   font-weight: normal;
-  opacity: 0.7;
+  color: $blockquote-text-color;
+  max-width: 42rem;
 
   @include large {
-    font-size: 1.25rem;
-  }
-
-  @include medium {
     font-size: 1.15rem;
   }
 
+  @include medium {
+    font-size: 1.05rem;
+  }
+
   @include small {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   & > span {
@@ -165,23 +175,22 @@ a {
 
 .main-content {
   word-wrap: break-word;
-  text-align: justify;
-  overflow-x: hidden;
+  text-align: left;
 
   :first-child {
     margin-top: 0;
   }
 
   @include large {
-    max-width: 64rem;
-    padding: 2rem 6rem;
+    max-width: 56rem;
+    padding: 3rem 3rem;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   @include medium {
-    padding: 2rem 4rem;
-    font-size: 1.1rem;
+    padding: 2.5rem 2.5rem;
+    font-size: 1.05rem;
   }
 
   @include small {
@@ -199,10 +208,16 @@ a {
   h4,
   h5,
   h6 {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
-    font-weight: normal;
+    font-weight: 700;
     color: $section-headings-color;
+  }
+
+  h2 {
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid $accent-color;
+    display: inline-block;
   }
 
   p {
@@ -375,32 +390,6 @@ a {
   color: $blockquote-text-color;
 }
 
-.person {
-  display: inline-block;
-  max-width: 9em;
-  vertical-align: top;
-  margin: 0 1.5em 1em 0;
-  text-align: center;
-  line-height: 1em;
-
-  & > img {
-    width: 100%;
-    border-radius: .2em;
-  }
-
-  & > a {
-    display: inline-block;
-    padding: .3em 0 .2em;
-    margin: 0 -1em;
-  }
-
-  & > span {
-    display: inline-block;
-    font-size: 0.8em;
-    margin: 0 -1em;
-  }
-}
-
 .sponsor {
   display: inline-block;
   vertical-align: middle;
@@ -425,4 +414,87 @@ a {
     color: #aaa;
     margin: 0;
   }
+}
+
+// Teaser image, shown prominently below the header
+.teaser {
+  margin: 0 0 2rem;
+  text-align: center;
+
+  img {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+}
+
+// Abstract paragraph, set apart from the rest of the body copy
+.abstract {
+  color: $body-text-color;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+// Author list
+.authors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 2rem;
+  margin: 1rem 0 2rem;
+  text-align: left;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 9em;
+  text-align: center;
+  line-height: 1.3;
+
+  & > img,
+  & > .avatar-fallback {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+
+  & > .avatar-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $accent-color;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+
+  & > a {
+    font-weight: 600;
+    color: $section-headings-color;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  & > span {
+    font-size: 0.8rem;
+    color: $blockquote-text-color;
+  }
+}
+
+// Citation / BibTeX block
+.citation-block {
+  background-color: $code-bg-color;
+  border: 1px solid $border-color;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.85rem;
+  color: $code-text-color;
+  white-space: pre-wrap;
+  overflow-x: auto;
 }
