@@ -1,28 +1,20 @@
-- name: Mélisande Teng
-  image: assets/faces/melisande.JPG
-  title: Mila, Université de Montréal
-  url: https://melisandeteng.github.io/
-- name: Amna Elmustafa
-  image: assets/faces/amna.jpeg
-  title: Stanford University
-  url: https://amnaalmgly.github.io/
-- name: Benjamin Akera
-  image: assets/faces/benjamin.jpeg
-  url: https://benjaminakera.com
-  title: Mila, McGill University
-- name: Yoshua Bengio
-  image: assets/faces/yoshua.jpeg
-  url: https://yoshuabengio.org/
-  title: Mila, Université de Montréal
-- name: Hager R. Abdelwahed
-  image: assets/faces/hager.jpg
-  url: https://hagerrady13.GitHub.io
+- name: Mahacine Ettahri
+  image: 
+  title: Mila, Polytechnique
+  url: 
+- name: Hager Radi Abdelwahed
+  image: 
+  url: 
   title: Mila
-- name: Hugo Larochelle
-  image: assets/faces/hugo.jpeg
-  url: https://mila.quebec/en/person/hugo-larochelle/
-  title: Mila, Google Deepmind
-- name: David Rolnick
-  image: assets/faces/david.jpeg
-  url: https://davidrolnick.com/
+- name: Toluwaleke Olutayo
+  image: 
+  title: Mila
+  url: 
+- name: Daniel Aloise,
+  image: 
+  url: Polytechnique
   title: Mila, McGill University
+- name: Gaétan Marceau Caron
+  image: 
+  url: 
+  title: Mila
