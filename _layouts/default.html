@@ -14,21 +14,23 @@
 
 <body>
   <section class="page-header">
-    <!-- <img class="project-logo" width="128px" src="/assets/logo.png" /> -->
     <h1 class="project-name">{{ site.title }}</h1>
     <h2 class="project-tagline">
       {%- for line in site.description -%}
       <span>{{ line }}</span><br>
       {%- endfor -%}
     </h2>
-    {% for link in site.buttons %}
-    <a href="{{ link[1] }}" class="btn">{{ link[0] }}</a>
-    {% endfor %}
+    <div class="btn-row">
+      {% for link in site.buttons %}
+      {% if link[1] and link[1] != "" %}
+      <a href="{{ link[1] }}" class="btn">{{ link[0] }}</a>
+      {% endif %}
+      {% endfor %}
+    </div>
   </section>
 
   <section class="main-content">
     {{ content }}
-
   </section>
 
   {% if site.google_analytics %}
