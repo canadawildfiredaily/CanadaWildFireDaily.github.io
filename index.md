@@ -26,7 +26,7 @@ The dataset is available for [download](https://huggingface.co/datasets/CanadaWi
 {%- for person in site.data.authors limit: 2 -%}
 <div class="person">
   {%- if person.image and person.image != "" -%}
-  <img src="{{ person.image }}" alt="{{ person.name }}"/>
+  <span class="avatar avatar--{{ person.name | slugify }}"><img src="{{ person.image }}" alt="{{ person.name }}"/></span>
   {%- else -%}
   <span class="avatar-fallback">{{ person.name | slice: 0 }}</span>
   {%- endif -%}
@@ -44,7 +44,7 @@ The dataset is available for [download](https://huggingface.co/datasets/CanadaWi
 {%- for person in site.data.authors offset: 2 -%}
 <div class="person">
   {%- if person.image and person.image != "" -%}
-  <img src="{{ person.image }}" alt="{{ person.name }}"/>
+  <span class="avatar avatar--{{ person.name | slugify }}"><img src="{{ person.image }}" alt="{{ person.name }}"/></span>
   {%- else -%}
   <span class="avatar-fallback">{{ person.name | slice: 0 }}</span>
   {%- endif -%}
