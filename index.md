@@ -16,6 +16,11 @@ layout: default
 CanadaWildfireDaily is a large-scale dataset and benchmark for daily wildfire spread prediction across Canada, designed to support research on forecasting the evolution of active wildfires. It pairs daily satellite-derived fire perimeters with weather, fuel, and terrain covariates, and provides standardized train/val/test splits along with baseline models to enable reproducible comparison of spread-prediction methods.
 </p>
 
+## Paper
+
+<!-- TODO: add paper link -->
+Coming soon
+
 ## Dataset and code
 
 The dataset is available for [download](https://huggingface.co/datasets/CanadaWildFireDaily/CanadaWildFireDaily-v1), and we release the [code](https://github.com/hagerradi/CanadaWildFireDaily) for building the dataset in other regions of the world and for the benchmark.
