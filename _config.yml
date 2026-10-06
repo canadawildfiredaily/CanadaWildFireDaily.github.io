@@ -5,9 +5,9 @@ description:
   - Project Website Under Construction
 buttons:
   Paper: "#placeholder"
-  CanadaWildFireDaily Dataset: https://huggingface.co/datasets/CanadaWildFireDaily/CanadaWildFireDaily-v1
+  Dataset: https://huggingface.co/datasets/CanadaWildFireDaily/CanadaWildFireDaily-v1
   Datasheet: ""
   Code: "https://github.com/hagerradi/CanadaWildFireDaily"
   Talk: ""
-  Poster: ""
+  Poster: "#placeholder"
   Authors: "#authors"
