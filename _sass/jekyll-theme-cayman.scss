@@ -88,6 +88,17 @@ a {
   }
 }
 
+.btn-disabled {
+  cursor: default;
+  opacity: 0.6;
+
+  &:hover {
+    color: $accent-color;
+    background-color: transparent;
+    border-color: $accent-color;
+  }
+}
+
 .btn-row {
   display: flex;
   flex-wrap: wrap;

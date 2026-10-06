@@ -22,7 +22,9 @@
     </h2>
     <div class="btn-row">
       {% for link in site.buttons %}
-      {% if link[1] and link[1] != "" %}
+      {% if link[1] == "#placeholder" %}
+      <span class="btn btn-disabled">{{ link[0] }}</span>
+      {% elsif link[1] and link[1] != "" %}
       <a href="{{ link[1] }}" class="btn">{{ link[0] }}</a>
       {% endif %}
       {% endfor %}

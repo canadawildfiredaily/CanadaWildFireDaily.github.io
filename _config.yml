@@ -4,8 +4,8 @@ description:
   - Currently Under Review
   - Project Website Under Construction
 buttons:
+  Paper: "#placeholder"
   CanadaWildFireDaily Dataset: https://huggingface.co/datasets/CanadaWildFireDaily/CanadaWildFireDaily-v1
-  Paper: ""
   Datasheet: ""
   Code: "https://github.com/hagerradi/CanadaWildFireDaily"
   Talk: ""
