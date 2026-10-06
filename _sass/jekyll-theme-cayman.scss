@@ -440,8 +440,12 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem 2rem;
-  margin: 1rem 0 2rem;
+  margin: 1rem 0;
   text-align: left;
+
+  &:last-of-type {
+    margin-bottom: 2rem;
+  }
 }
 
 .person {

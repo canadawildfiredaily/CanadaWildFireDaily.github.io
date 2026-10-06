@@ -1,20 +1,20 @@
 - name: Mahacine Ettahri
   image: 
-  title: Mila, Polytechnique
+  title: Mila: Quebec AI Institute, Polytechnique Montréal
   url: 
 - name: Hager Radi Abdelwahed
-  image: 
+  image: assets/faces/hager.jpg
   url: 
-  title: Mila
+  title: Mila: Quebec AI Institute & Project Lead
 - name: Toluwaleke Olutayo
-  image: 
-  title: Mila
+  image: assets/faces/toluwaleke.jpg
+  title: Mila: Quebec AI Institute
   url: 
 - name: Daniel Aloise
-  image: 
+  image: assets/faces/daniel.png
   url: 
-  title: Mila, Polytechnique, McGill University
+  title: Mila: Quebec AI Institute, Polytechnique Montréal, McGill University
 - name: Gaétan Marceau Caron
-  image: 
+  image: assets/faces/gaetan.png
   url: 
-  title: Mila
+  title: Mila: Quebec AI Institute

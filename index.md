@@ -3,6 +3,9 @@ title: 'CanadaWildfireDaily: A Dataset and Benchmark for Daily Wildfire Spread i
 layout: default
 ---
 
+<p class="teaser"> <img src="assets/CanadawildfireDaily_problem.png" width="85%" alt="The wildfire spread prediction problem addressed by CanadaWildFireDaily"/>
+</p>
+
 <p class="teaser"> <img src="assets/CanadaWildFireDaily_overview.png" width="85%" alt="Overview of the CanadaWildFireDaily dataset"/>
 </p>
 
@@ -20,7 +23,25 @@ The dataset is available for [download](https://huggingface.co/datasets/CanadaWi
 ## Authors
 
 <div class="authors" id="authors">
-{%- for person in site.data.authors -%}
+{%- for person in site.data.authors limit: 2 -%}
+<div class="person">
+  {%- if person.image and person.image != "" -%}
+  <img src="{{ person.image }}" alt="{{ person.name }}"/>
+  {%- else -%}
+  <span class="avatar-fallback">{{ person.name | slice: 0 }}</span>
+  {%- endif -%}
+  {%- if person.url and person.url != "" -%}
+  <a href="{{ person.url | relative_url }}">{{ person.name }}</a>
+  {%- else -%}
+  <span>{{ person.name }}</span>
+  {%- endif -%}
+  <span>{{ person.title | replace: '&', '<br>' }}</span>
+</div>
+{%- endfor -%}
+</div>
+
+<div class="authors" id="authors-more">
+{%- for person in site.data.authors offset: 2 -%}
 <div class="person">
   {%- if person.image and person.image != "" -%}
   <img src="{{ person.image }}" alt="{{ person.name }}"/>
